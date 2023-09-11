@@ -51,7 +51,7 @@ Crie um arquivo .gitignore no diretório raiz do seu repositório Git, se ele ai
 
 Comando para criar o arquivo git ignore
 -
-        touch gitignore
+        touch .gitignore
 
 Basta abrir o arquivo e editar com os conteúdos que deseja ignorar
 
