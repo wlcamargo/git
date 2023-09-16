@@ -1,10 +1,14 @@
-# Passo a Passo para Inicializar e Realizar o Deploy do Projeto no Github
+# Tutorial Git
 
 Abrir ajuda do Git
 -
     git --help 
 
-Inicializar o Git
+Abrir log do Git
+-
+    git log 
+
+Inicializar um repositório do Git
 -
 	git init
  Este comando é usado para iniciar um novo repositório Git em um diretório local. Após executá-lo, o Git começa a rastrear as alterações nesse diretório.
@@ -39,12 +43,17 @@ Realizar Push das alterações
        git push
 O comando git push envia os commits locais para o repositório remoto. Isso atualiza o repositório remoto com as alterações que você fez localmente.
 
+Realizar Pull das alterações
+-
+       git pull
+O comando git pull busca os commits do repositório remoto para o repositório local.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Instruções para ignorar arquivos
--
+# Instruções para ignorar arquivos
+
+
 Você pode configurar o Git para ignorar arquivos, pastas ou tipos de arquivos específicos usando um arquivo chamado .gitignore. Este arquivo lista os padrões de nomes de arquivos e diretórios que o Git deve ignorar quando estiver rastreando as mudanças em seu repositório. Aqui estão as instruções para criar e usar um arquivo .gitignore:
 
 Crie um arquivo .gitignore no diretório raiz do seu repositório Git, se ele ainda não existir.
@@ -66,15 +75,16 @@ Ignorar a pasta "logs"
 -
     /logs/
 
+# Git Flow
 
-Considerações finais
--
+## Inicializar o git flow
 
-O # é usado para adicionar comentários ao arquivo .gitignore.
-*.log corresponde a todos os arquivos com extensão .log.
-/logs/ corresponde à pasta chamada "logs" na raiz do projeto.
-**Salve e feche o arquivo .gitignore após adicionar as regras desejadas.
+    git flow init
 
-Aplique as alterações ao seu repositório Git.
+## Adicionar uma branch release
+    git flow feature start nova_branch
+
+## Finalizar a branch de release
+    git flow feature finish nova_branch
 
 
