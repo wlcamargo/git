@@ -21,7 +21,8 @@ O comando git status é usado para verificar o estado atual do seu repositório.
 Associar Email e UserName
 -
     git config --global user.name "wallace camargo"
-Use git config para definir sua identidade no Git. Substitua "wallace camargo" pelo seu nome de usuário e configure seu endereço de e-mail também com o comando git config --global user.email "seu-email@example.com".
+    git config --global user.email "wallacecpdg@gmail.com"
+
 
 Vincular Git local ao Github
 -
